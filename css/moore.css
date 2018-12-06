@@ -354,12 +354,19 @@ padding-bottom: 60px;
 .filter{
 	background-color:#222F5B;
 	color:white; 
-	min-height: 645px;
-	margin-bottom: 2em;	
+	
 }
 .twitter{
-	background-color: yellow;
-	min-height: 645px;
+	background-color: white;	
+}
+
+.filter,
+.twitter{
+	height: 500px; /* fallback if needed */
+  	min-height: calc(100% - 2em);
+}
+
+.jobs row{
 	margin-bottom: 2em;
 }
 .specs{
@@ -484,6 +491,19 @@ padding-bottom: 60px;
 .intro-p{
 	margin-right: 15px;
 	margin-left: 15px;
+}
+
+@media (max-width: 780px) {
+.filter,
+.twitter{
+	margin-bottom: 2em;
+	}
+.filter{
+	margin-top:-3em;
+	}
+.search{
+	margin-top:2em;
+	}
 }
 
 @media (max-width: 580px) {
