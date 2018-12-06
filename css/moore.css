@@ -185,12 +185,19 @@ h3,
   bottom: 0;
   left: 0;
   right: 0;
-background: -webkit-linear-gradient(rgba(14, 26, 64, 0.45), rgba(93, 93, 93, 0.45));
-background: -o-linear-gradient(rgba(14, 26, 64, 0.45), rgba(93, 93, 93, 0.45));
-background: linear-gradient(rgba(14, 26, 64, 0.45), rgba(93, 93, 93, 0.45));, url('../img/hand.jpg') no-repeat center;
+background: -webkit-linear-gradient(rgba(14, 26, 64, 0.2), rgba(93, 93, 93, 0.2));
+background: -o-linear-gradient(rgba(14, 26, 64, 0.2), rgba(93, 93, 93, 0.2));
+background: linear-gradient(rgba(14, 26, 64, 0.2), rgba(93, 93, 93, 0.2));, url('../img/hand.jpg') no-repeat center;
 }
 
-
+.carousel-item {
+  background: no-repeat;
+  background-position: 50% 60%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 /**************Search*********/
 .search {		
 	display: flex;	
@@ -236,6 +243,9 @@ background: linear-gradient(rgba(14, 26, 64, 0.45), rgba(93, 93, 93, 0.45));, ur
 .why p{
 	line-height: 1.7em;
 	font-size: 1.5em;	
+}
+.form-control{
+	padding-left:20px;
 }
 
 /*********BLOG***********/
@@ -309,30 +319,100 @@ footer ul li i:hover {
   	transform: scale(0.95);
 }
 
-
 .navbar-toggler:focus{
 	outline: none;
 }
 
 
+/*********JOBS PAGE**********/
 
+.jobs-img{
+	background: linear-gradient(
+     					 rgba(14, 26, 64, 0.2), 
+     					 rgba(93, 93, 93, 0.2)
+  						 ), url('../images/bricks4.jpg') no-repeat center;
+  	background-size: cover;
+  	background-position: 0% 15%;
+  	min-height: 550px;
+  }
+
+.jobs-img a{
+	text-decoration: none;
+}
+.search-jobs{
+background: none;
+padding-top: 60px;
+padding-bottom: 60px;
+}
+.jobs .card{
+	color:#222F5B;
+}
+.aside{
+	display: flex;
+	flex-direction: column;
+}
+.filter{
+	background-color:#222F5B;
+	color:white; 
+	min-height: 645px;
+	margin-bottom: 2em;	
+}
+.twitter{
+	background-color: yellow;
+	min-height: 645px;
+	margin-bottom: 2em;
+}
+.specs{
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 15px;	
+	font-size: 0.85em;
+}
+.specs div{
+	padding-right: 40px;
+}
+.specs div span{
+	padding-right: 10px;
+}
+.jobs .card{
+	margin-bottom: 2em;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.jobs .btn{
+	color:#333;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 10px;
+}
+.search-jobs .btn{
+	border-radius: 10px;
+}
+
+.jobs .card-footer{
+	padding-top: 0px;
+}
+
+.jobs .card-body{
+	padding-bottom: 0px;
+}
+
+/*********MEDIA**********/
 
 
 @media (min-width: 992px) {
   body {
   	margin-top:110px;
   }
-}
-
-.carousel-item {
-  height: 55vh;
-  min-height: 300px;
-  background: no-repeat;
-  background-position: 50% 60%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  .container.jobs {
+  	min-width: 70vw;
+  }
+  .container.search-jobs{
+	min-width: 65vw;
+	}
 }
 
 .slide-2{
@@ -341,6 +421,9 @@ footer ul li i:hover {
 .slide-4{
 	background-position: 0% 20%;
 }
+
+
+
 @media (max-width: 1199px) {
 
 .nav-item {
@@ -359,7 +442,9 @@ footer ul li i:hover {
 .collapsing { 
   background-color: white;  
 }
-
+.container.jobs{
+	min-width: 90vw;
+}
 }
 
 @media (max-width: 991px) {
