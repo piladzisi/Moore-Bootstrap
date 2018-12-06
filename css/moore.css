@@ -1,0 +1,420 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+
+body {  
+  	font-family: 'Open Sans', sans-serif;
+	font-size: 16px; 
+	color:#333;
+/*	background: blue;*/
+}
+
+
+.container,
+.container-fluid{
+	padding-left: 0px;
+	padding-right:0px;
+}
+
+.why,
+footer,
+.search{
+	background:#222F5B;
+}
+.lightblue{
+	color:#41B1E6;
+}
+.blue{
+	color: #222F5B;
+}
+a{
+	text-decoration: none;
+}
+.header-wrap{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;	
+}
+
+h3,
+.display-4,
+.main-nav a{
+	font-weight: bold !important;
+}
+
+/*******NAVBAR******/
+
+.navbar{
+	padding: 0rem 1rem;
+}
+.navbar-toggler-icon{
+	margin-top:1em;
+	width:3em;
+	height:3em;	
+}
+
+.logo {	 
+	 max-height: 110px;
+}
+.fa-bars{
+	font-size:46px;	
+	color:#979797;
+}
+.nav-link{
+	padding:0 1rem;
+}
+
+.nav-item {
+  min-width: 130px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 16px;
+  line-height: 120px;  
+  text-align: center;  
+}
+
+.nav-item:hover { 
+  color: #333;
+  font-size: 18px;
+}
+
+.nav-item:active,
+.nav-item:focus,
+.nav-item.current {
+  background-color: #ebebeb;
+}
+
+ .nav-item{
+  background-color: white; 
+}
+
+.navbar-collapse{	
+	justify-content: space-around;
+}
+.nav-item a{
+	color:#333;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.upload{	
+	color: #41B1E6 !important;
+	min-width: 180px;
+	padding-left: 2em;
+}
+
+.fa-cloud-upload-alt{
+	font-size: 20px;
+}
+
+
+
+
+
+/***********CARD*****/
+
+
+.card,
+.card-body,
+.card-header,
+.card-footer{	
+	background:white;
+	border:none;
+	border-radius:0;	
+}
+.card-footer{
+	display:flex;
+	justify-content: flex-end;
+}
+.card{
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;	
+}
+
+.city{	
+	display: flex;	
+	justify-content: space-between;	
+}
+.card-body{
+	display:flex;
+	flex-direction: column;
+	justify-content:flex-end;
+}
+.card-header:hover{
+	color: #276a8a;	
+}
+.card a:first-child{
+	text-decoration: none;
+}
+
+
+/**********Slider***********/
+
+.carousel,
+.slider,
+.carousel-item,
+.carousel-inner,
+.search-container{
+	min-height: 535px;
+}
+
+.carousel-inner{
+	position: absolute;
+}
+
+.search-container{		
+	position: relative;	
+}
+
+.intro-p {   
+    font-size: 22px;
+    line-height: 34px;
+    text-align: justify;
+    }
+.intro-p span{
+	font-size: 70px;
+}
+.carousel-item::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+background: -webkit-linear-gradient(rgba(14, 26, 64, 0.45), rgba(93, 93, 93, 0.45));
+background: -o-linear-gradient(rgba(14, 26, 64, 0.45), rgba(93, 93, 93, 0.45));
+background: linear-gradient(rgba(14, 26, 64, 0.45), rgba(93, 93, 93, 0.45));, url('../img/hand.jpg') no-repeat center;
+}
+
+
+/**************Search*********/
+.search {		
+	display: flex;	
+	justify-content: center; 	
+ 	padding-bottom: 20px;
+ 	padding-top: 20px;	
+}
+.input-group{
+	display: flex;
+	display:-ms-flexbox;
+	align-items: center; 
+	margin: 0 1em;
+}
+.search .form-control{	
+	min-width: 100px;
+	min-height: 60px;
+	margin:1em !important;
+	font-size: 18px;						
+}
+
+.search .orange{ 	
+	flex: 3 50px !important;
+	min-height: 60px;
+	margin:1em !important;		
+}
+.search input:first-child{
+	flex: 2 150px;
+	border-radius: 0;
+}
+
+.search i{
+	font-size: 30px;
+}
+
+/***********WHY**************/
+.why h1,
+.why p{
+	padding: 1.25rem;
+}
+.why{
+	min-height:200px;
+}
+.why p{
+	line-height: 1.7em;
+	font-size: 1.5em;	
+}
+
+/*********BLOG***********/
+
+
+.blogpic img{	
+    max-height: 300px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.blogpic img:hover{
+	transform: scale(1.05);
+}
+/***********FOOTER**************/
+footer{
+	grid-row: 11;
+	-ms-grid-row: 11;
+	background-color: #222F5B;
+	padding: 40px 0;
+	display: flex;
+	display:-ms-flexbox;
+	flex-direction: column;
+	align-items: center;
+}
+footer ul{
+	margin-bottom: 25px;
+	display:flex;
+	display:-ms-flexbox;
+	flex-direction: row;
+	list-style-type: none;
+}
+
+footer ul li i{
+	font-size:36px;
+	cursor:pointer;
+	color: #fff;
+	padding:25px;
+}
+
+footer ul li i:hover {	
+	transform: scale(1.3);
+}
+
+
+/********** BUTTON STATES *******/
+.btn {
+  color:white;
+  background-color:#FD8D00;  
+  border:none; 
+  min-width: 150px; 
+  border-radius: 5px;
+}
+
+.btn:hover,
+.orange:hover{
+    background-color: #CA7100; 
+    color:white;    
+} 
+
+.btn:active,
+.orange:active {
+  background-color: #EE8500;
+  box-shadow: 0 5px 5px rgba(0,0,0,0); 
+   -webkit-transform: scale(0.95);
+  	transform: scale(0.95);
+  	outline: none;
+}
+.orange i:active{
+	-webkit-transform: scale(0.95);
+  	transform: scale(0.95);
+}
+
+
+.navbar-toggler:focus{
+	outline: none;
+}
+
+
+
+
+
+@media (min-width: 992px) {
+  body {
+  	margin-top:110px;
+  }
+}
+
+.carousel-item {
+  height: 55vh;
+  min-height: 300px;
+  background: no-repeat;
+  background-position: 50% 60%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.slide-2{
+	background-position: 0% 50%;
+}
+.slide-4{
+	background-position: 0% 20%;
+}
+@media (max-width: 1199px) {
+
+.nav-item {
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-left: 0px;	
+	line-height: 70px;	
+	}
+.navbar>.container-fluid{
+	height: 110px;
+	}
+.navbar{
+	padding: 0;
+}
+.collapsing { 
+  background-color: white;  
+}
+
+}
+
+@media (max-width: 991px) {
+
+.intro-p{
+	font-size:20px;
+	margin-top: 100px;
+}
+
+.carousel-item,
+.carousel-inner{
+	min-height: 670px;
+}
+.search-container{
+		max-width: 100vw;
+	}
+.input-group{
+	flex-direction: column;
+}
+.search input:first-child {
+	flex: 1 60px;
+}
+.search .form-control{
+	margin:0.75em !important;
+}
+.search{
+	padding:1em;
+	margin-bottom: 4.5em;
+}
+.search .form-control,
+.search .orange { 
+ 	height: 60px; 
+    width: 90vw !important;  
+    border-radius: 5px !important;
+ 	}
+
+.intro-p{
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+@media (max-width: 580px) {
+.logo{	
+	height:100px;
+	}
+
+.intro-p{
+	font-size: 18px;
+	
+}
+.intro-p span{
+	font-size: 50px;
+}
+@media (min-width: 1280px) {
+  body {
+  	margin-top:110px;
+  }
+}
