@@ -363,9 +363,11 @@ padding-bottom: 60px;
 .filter,
 .twitter{
 	height: 500px; /* fallback if needed */
-  	min-height: calc(100% - 2em);
+  	min-height: calc(50% - 2em);
 }
-
+.twitter{
+	margin-top:2em;
+}
 .jobs row{
 	margin-bottom: 2em;
 }
@@ -498,8 +500,11 @@ padding-bottom: 60px;
 .twitter{
 	margin-bottom: 2em;
 	}
-.filter{
+/*.filter{
 	margin-top:-3em;
+	}*/
+	.twitter{
+		display: none;
 	}
 .search{
 	margin-top:2em;
