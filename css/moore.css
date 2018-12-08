@@ -21,6 +21,7 @@ body {
 
 .why,
 footer,
+.filter,
 .search{
 	background:#222F5B;
 }
@@ -262,8 +263,7 @@ background: linear-gradient(rgba(14, 26, 64, 0.2), rgba(93, 93, 93, 0.2));, url(
 /***********FOOTER**************/
 footer{
 	grid-row: 11;
-	-ms-grid-row: 11;
-	background-color: #222F5B;
+	-ms-grid-row: 11;	
 	padding: 40px 0;
 	display: flex;
 	display:-ms-flexbox;
@@ -344,38 +344,14 @@ background: none;
 padding-top: 60px;
 padding-bottom: 60px;
 }
-.jobs .card{
-	
-}
 
-.jobs row{
-	margin-bottom: 2em;
-}
 .specs{
 	display: flex;
 	flex-direction: row;
 	padding-bottom: 15px;	
 	font-size: 0.85em;
 }
-.specs div{
-	padding-right: 40px;
-}
-.specs div span{
-	padding-right: 10px;
-}
-.jobs .card{
-	margin-bottom: 2em;
-	/*padding-left: 20px;
-	padding-right: 20px;*/
-	color:#222F5B;
-}
-.jobs .card-header,
-.jobs .card-body,
-.jobs .card-footer,
-.uploadcv-jobs{
-	padding-left: 2rem;
-	padding-right: 2rem;
-}
+
 .jobs .card-footer .btn{
 	color:#333;
 	text-transform: uppercase;
@@ -402,10 +378,6 @@ padding-bottom: 60px;
 	font-size: 70px;
 }
 
-.show-more,
-.uploadcv-jobs{
-	margin-bottom: 2em;
-}
 .uploadcv-jobs{
 	display: flex;	
 	align-items: center;	
@@ -435,29 +407,14 @@ padding-bottom: 60px;
 .dropdown-toggle::after {
 	content: none;
 }
-.aside{
-	display: flex;
-	flex-direction: column;
-}
-.filter{
-	background-color:#222F5B;
-	color:white;
-	padding-top:20px;
-	display: flex;
-	flex-direction: column;
-}
 
 
 .filter{
-	height: 500px;
-	margin-bottom: 2em;
-  /*	max-height: calc(50% - 2em);*/
+	height: 600px;
 }
 
-.twitter{
-	padding-top: 20px;	
-	margin-bottom: 2em;
-	min-height: 780px;
+.twitter{	
+	min-height: 680px;
 }	
 .filter-body{
 	display: flex;
@@ -466,25 +423,7 @@ padding-bottom: 60px;
 	min-height: calc(100% - 120px);
 
 }
-.filter-item{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;	
-	padding-left: 20px;	
-	padding-right: 20px;	
-}
-.twitter-item{
-	display: flex;	
-	align-items: center;	
-	padding-left: 20px;	
-	padding-right: 20px;
-	justify-content: space-between;	
-}
 
-.filter-footer{	
-	min-height: 120px;
-	
-}
 .filter-footer .btn{
 	padding: 15px;
 	border-radius: 10px;	
