@@ -335,7 +335,8 @@ background: none;
 	font-size: 0.85em;
 }
 
-.jobs .card-footer .btn{
+.jobs .card-footer .btn,
+.contact .btn{
 	color:#333;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -446,6 +447,15 @@ background: none;
 .contact input{
 	border-radius: 0;
 }
+#contact-form-enquiry{
+	padding-bottom: 300px;
+}
+/*.contact .form-control-lg{
+	font-size: 1.1em;
+}*/
+
+.big-check {width: 20px; height: 20px;}
+
 /*********MEDIA**********/
 
 
@@ -539,11 +549,15 @@ background: none;
   	margin-top:110px;
   }
 
-.contact-img h1,
+
 .jobs-img h1{
 	margin-left: 100px;
 	padding-top: 400px;
 }
+.contact-img h1{
+	margin-left: 50px;
+	padding-top: 50px;
+	}
 
 
 @media (max-width: 767px) {
@@ -551,13 +565,22 @@ background: none;
 .twitter{
 		display: none;
 	}
+form{
+	margin-top: 2rem;
+	}
 }
 
 @media (max-width: 580px) {
 .logo{	
 	height:100px;
 	}
-
+.container{
+	padding-right:2rem;
+	padding-left:2rem;
+}
+.display-4{
+	font-size: 3rem;
+}
 .intro-p{
 	font-size: 18px;
 	
