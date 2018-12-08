@@ -28,17 +28,8 @@ footer,
 .lightblue{
 	color:#41B1E6;
 }
-
 .blue{
 	color: #222F5B;
-}
-a{
-	text-decoration: none;
-}
-.header-wrap{
-	display:flex;
-	flex-direction: column;
-	justify-content: center;	
 }
 
 h3,
@@ -79,8 +70,7 @@ h3,
 }
 
 .nav-item:hover { 
-  color: #333;
-  font-size: 18px;
+  	background-color:#f8f8f8;
 }
 
 .nav-item:active,
@@ -113,11 +103,7 @@ h3,
 }
 
 
-
-
-
 /***********CARD*****/
-
 
 .card,
 .card-body,
@@ -341,10 +327,7 @@ footer ul li i:hover {
 
 .search-jobs{
 background: none;
-padding-top: 60px;
-padding-bottom: 60px;
 }
-
 .specs{
 	display: flex;
 	flex-direction: row;
@@ -421,9 +404,10 @@ padding-bottom: 60px;
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: calc(100% - 120px);
-
 }
-
+.twitter-mobile{
+	display: none;
+}
 .filter-footer .btn{
 	padding: 15px;
 	border-radius: 10px;	
@@ -442,6 +426,25 @@ padding-bottom: 60px;
 .btn.btn-secondary{
 	background:none;
 	 text-transform: lowercase;
+}
+
+/********CONTACT PAGE********/
+.contact-img{
+	background: linear-gradient(
+     					 rgba(14, 26, 64, 0.2), 
+     					 rgba(93, 93, 93, 0.2)
+  						 ), url('../images/phone4.jpg') no-repeat center;
+  	background-size: cover;
+  	background-position: 0% 40%;
+  	min-height: 450px;
+  }
+
+.contact-img h1{
+	margin-left: 180px;
+	padding-top: 170px;
+}
+.contact input{
+	border-radius: 0;
 }
 /*********MEDIA**********/
 
@@ -503,6 +506,7 @@ padding-bottom: 60px;
 }
 .search-container{
 		max-width: 100vw;
+		margin-bottom: 3rem;
 	}
 .input-group{
 	flex-direction: column;
@@ -513,10 +517,7 @@ padding-bottom: 60px;
 .search .form-control{
 	margin:0.75em !important;
 }
-.search{
-	padding:1em;
-	margin-bottom: 4.5em;
-}
+
 .search .form-control,
 .search .orange { 
  	height: 60px; 
@@ -538,6 +539,7 @@ padding-bottom: 60px;
   	margin-top:110px;
   }
 
+.contact-img h1,
 .jobs-img h1{
 	margin-left: 100px;
 	padding-top: 400px;
@@ -545,14 +547,9 @@ padding-bottom: 60px;
 
 
 @media (max-width: 767px) {
-.filter{
-	margin-bottom: 2em;
-	}
+
 .twitter{
 		display: none;
-	}
-.search{
-	margin-top:2em;
 	}
 }
 
