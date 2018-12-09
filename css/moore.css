@@ -38,6 +38,9 @@ h3,
 	font-weight: bold !important;
 }
 
+ul {
+  list-style-type: none;
+}
 /*******NAVBAR******/
 
 .navbar{
@@ -101,7 +104,10 @@ h3,
 .fa-cloud-upload-alt{
 	font-size: 20px;
 }
-
+.fa-circle{
+	font-size: 10px;
+	padding-right: 10px;
+}
 
 /***********CARD*****/
 
@@ -372,12 +378,7 @@ background: none;
 	text-decoration: none;
 	color:#161E3A;
 }
-.twitter a:hover,
-.uploadcv-jobs a:hover,
-.card-header:hover{
-	text-decoration: none;
-	color: #276a8a;
-}
+
 .jobs .fa-cloud-upload-alt{
 	font-size: 26px;
 }
@@ -385,7 +386,7 @@ background: none;
 /**********FILTER***********/
 .filter .dropdown{
 	cursor: pointer;
-	margin-right: -20px;
+	margin-right: -25px;
 }
 
 .dropdown-toggle::after {
@@ -413,10 +414,6 @@ background: none;
 	border-radius: 10px;	
 }
 
-
-.filter a:hover{
-	text-decoration:none;
-}
 .plus{
 	padding-left: 10px;
 	padding-right: 20px;
@@ -458,6 +455,17 @@ background: none;
 	border:1em solid white;
 	min-height: 400px;
 }
+
+.link{
+	color:#41B1E6;
+	font-weight:bold;
+}
+
+.link:hover{
+	text-decoration: none;
+	color:#276a8a;
+}
+
 /*********MEDIA**********/
 
 
