@@ -283,7 +283,8 @@ footer ul li i:hover {
 
 
 /********** BUTTON STATES *******/
-.btn {
+.card-footer .btn,
+.orange{
   color:white;
   background-color:#FD8D00;  
   border:none; 
@@ -291,7 +292,7 @@ footer ul li i:hover {
   border-radius: 5px;
 }
 
-.btn:hover,
+.card-footer .btn:hover,
 .orange:hover{
     background-color: #CA7100; 
     color:white;    
@@ -299,7 +300,6 @@ footer ul li i:hover {
 
 .btn:active,
 .orange:active {
-  background-color: #EE8500;
   box-shadow: 0 5px 5px rgba(0,0,0,0); 
    -webkit-transform: scale(0.95);
   	transform: scale(0.95);
@@ -420,10 +420,6 @@ background: none;
 	font-size: 36px;
 	color:#FD8D00;
 }
-.btn.btn-secondary{
-	background:none;
-	 text-transform: lowercase;
-}
 
 /********CONTACT PAGE********/
 .contact-img{
@@ -465,7 +461,9 @@ background: none;
 	text-decoration: none;
 	color:#276a8a;
 }
-
+.terms .btn-group-vertical .btn{
+	min-width: 220px;
+}
 /*********MEDIA**********/
 
 
@@ -601,8 +599,6 @@ form{
 .center{
 	 justify-content:center;
 }
-
-
 
 @media (min-width: 1280px) {
   body {
