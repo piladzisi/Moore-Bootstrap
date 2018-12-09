@@ -392,7 +392,6 @@ background: none;
 	content: none;
 }
 
-
 .filter{
 	height: 600px;
 }
@@ -450,12 +449,15 @@ background: none;
 #contact-form-enquiry{
 	padding-bottom: 300px;
 }
-/*.contact .form-control-lg{
-	font-size: 1.1em;
-}*/
 
-.big-check {width: 20px; height: 20px;}
-
+.big-check {
+	width: 20px;
+	height: 20px;
+	}
+.map{
+	border:1em solid white;
+	min-height: 400px;
+}
 /*********MEDIA**********/
 
 
@@ -588,6 +590,12 @@ form{
 .intro-p span{
 	font-size: 50px;
 }
+.center{
+	 justify-content:center;
+}
+
+
+
 @media (min-width: 1280px) {
   body {
   	margin-top:110px;
