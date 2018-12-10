@@ -31,7 +31,12 @@ footer,
 .blue{
 	color: #222F5B;
 }
-
+.conditions-btn{
+	background-color:#f8f8f8 !important;
+}
+.conditions-btn:hover{
+	background-color: #ebebeb !important;
+}
 h3,
 .display-4,
 .main-nav a{
@@ -453,7 +458,6 @@ background: none;
 
 .link{
 	color:#41B1E6;
-	font-weight:bold;
 }
 
 .link:hover{
@@ -463,6 +467,31 @@ background: none;
 .terms .btn-group-vertical .btn{
 	min-width: 220px;
 }
+
+/*BLOG PAGE*/
+
+.blog-page-img{
+	max-height: 300px;
+	object-fit:contain;
+}
+.breadcrumb{
+	background-color: #ebebeb;
+}
+
+.blog-page .btn-secondary{
+	background-color: #FD8D00;
+	border-color:#FD8D00;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
 /*********MEDIA**********/
 
 
@@ -508,6 +537,9 @@ background: none;
 .container.jobs{
 	min-width: 90vw;
 }
+.uploadcv-jobs {
+	justify-content: center;
+	}
 }
 
 @media (max-width: 991px) {
